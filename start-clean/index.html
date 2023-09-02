@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+      <nav class="nav">
+
+          <a class="number">Кардиганы</a>
+        <ul class="menu">
+          <li class="menu-item">
+            <a class = "menu-link" href="#">Размер</a>
+            <img class = "logo-img" src="images/arrow.svg" alt="Значки">
+          </li>
+          <li class="menu-item">
+            <a class = "menu-link2" href="#">Базовый цвет</a>
+            <img class = "logo-img2" src="images/arrow.svg" alt="Значки">
+          </li>
+          <li class="menu-item">
+            <a class = "menu-link3" href="#">Стоимость, ₽</a>
+            <img class = "logo-img3" src="images/arrow.svg" alt="Значки">
+          </li>
+          <li class="menu-item">
+            <a class = "menu-link4" href="#">Сезон</a>
+            <img class = "logo-img4" src="images/arrow.svg" alt="Значки">
+          </li>
+          <li class="menu-item">
+            <a class = "menu-link5" href="#">Материал</a>
+            <img class = "logo-img5" src="images/arrow.svg" alt="Значки">
+          </li>
+        </ul>
+        <a class="aboba">
+          <div class="dropdown">
+              <a class="menu-link6" href="#" id="dropdown-text">
+                  <span>Сначала дороже</span>
+                  <img class="logo-img6" src="images/arrow.svg" alt="Значки">
+              </a>
+              <ul id="dropdown-menu" class="dropdown-menu">
+                  <li><a href="#" onclick="changeFilter('По популярности')">По популярности</a></li>
+                  <li><a href="#" onclick="changeFilter('По новинке')">По новинке</a></li>
+                  <li><a href="#" onclick="changeFilter('Сначала дешевле')">Сначала дешевле</a></li>
+                  <li><a href="#" onclick="changeFilter('Сначала дороже')">Сначала дороже</a></li>
+              </ul>
+          </div>
+      </a>
+
+</header>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Nunito+Sans:opsz,wght@6..12,200&family=Roboto:wght@400;500;700&display=swap');
+.header{
+
+}
+
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+    
+}
+
+.number {
+    font-family: Tenor Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: 0.96px;
+}
+
+.namber{
+}
+.menu-link,
+.menu-link2,
+.menu-link3,
+.menu-link4,
+.menu-link5 {
+    color: var(--Subtitle-Darkness-Gray, #969696);
+    position: relative;
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.36px;
+    top: 25px;
+    text-decoration: none;
+    border-bottom: 1px solid black; /* Черная линия снизу */
+    padding-bottom: 4px; /* Увеличиваем длину линии снизу */
+    transition: color 0.3s ease; /* Плавный переход цвета текста */
+}
+
+.menu-link6{
+    font-family: Nunito Sans;
+    color: var(--Subtitle-Darkness-Gray, #969696);
+    position: relative;
+    left: 0px;
+    font-family: Nunito Sans;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.36px;
+    top: 32px;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Плавный переход цвета текста */
+}
+
+.logo-img6 {
+    
+    height: auto; /* Автоматически подстроит высоту, сохраняя пропорции */
+}
+
+.logo-img,
+.logo-img2,
+.logo-img3,
+.logo-img4,
+.logo-img5 {
+    position: relative;
+    top: 25px; /* Вдвигаем SVG вниз на 10 пикселей */
+    height: auto;
+
+}
+
+.menu-link5 {
+    left: 160px;
+}
+
+.menu-link4 {
+    left: 128px;
+}
+
+.menu-link3 {
+    left: 96px;
+}
+
+.menu-link2 {
+    left: 64px;
+}
+
+.menu-link {
+    left: 32px;
+}
+
+.logo-img {
+    left: 32px;
+}
+.logo-img2 {
+    left: 64px;
+}
+.logo-img3 {
+    left: 96px;
+}
+.logo-img4 {
+    left: 128px;
+}
+.logo-img5 {
+    left: 160px;
+}
+
+.menu-link6{
+    border-bottom: 1px solid black; /* Черная линия снизу */
+    margin-bottom: 30px; /* Поднимаем линию на 10px вверх */
+
+}
+
+.menu-link:hover,
+.menu-link2:hover,
+.menu-link3:hover,
+.menu-link4:hover,
+.menu-link5:hover,
+.menu-link6:hover,
+.menu-link:focus,
+.menu-link2:focus,
+.menu-link3:focus,
+.menu-link4:focus,
+.menu-link5:focus,
+.menu-link6:focus,
+.menu-link:active,
+.menu-link2:active,
+.menu-link3:active,
+.menu-link4:active,
+.menu-link5:active,
+.menu-link6:active {
+    color: black; /* Изменяем цвет текста на черный при наведении, фокусе и нажатии */
+}
+
+
+
+
+/* Стили для выпадающего меню */
+.dropdown-menu {
+    display: none; /* Начально скрываем меню */
+    position: absolute;
+    font-family: Nunito Sans;
+    background-color: #fff;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 0px;
+    list-style: none;
+    margin: 0;
+    width: 263px; /* Задаем ширину меню */
+    height: 190px;
+    margin-top: 38px;
+    right: 34px;
+    text-align: center;
+    color: black;
+    
+}
+
+/* Стили для пунктов меню */
+.dropdown-menu li {
+    margin: 10px 0;
+    margin-bottom: 20px;
+    color: black;
+    margin-right: 60px;
+
+    
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #000;
+    opacity: 0.7;
+    font-family: Nunito Sans;
+    font-size: 17px;
+    font-weight: 400;
+    
+}
+
+/* При нажатии на текст, отображаем выпадающее меню */
+.menu-link6:hover + .dropdown-menu, /* При наведении на текст */
+.dropdown-menu:hover { /* При наведении на само меню */
+    display: block;
+}
+
+
+.dropdown-menu li:first-child {
+    margin-top: 24px; /* Убираем верхний отступ для первого пункта меню */
+}
+
+
+/* Изначальное состояние SVG */
+.menu-link6 .logo-img6 {
+    content: url('../images/arrow.svg');
+    /* Другие стили для изображения */
+}
+
+/* SVG при наведении */
+.menu-link6:hover .logo-img6 {
+    content: url('../images/arrowdown.svg'); /* Замените 'images/arrow-hovered.svg' на путь к вашему SVG для состояния при наведении */
+    /* Другие стили для изображения при наведении, если необходимо */
+}
+
+
+
